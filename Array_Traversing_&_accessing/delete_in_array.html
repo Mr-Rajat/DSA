@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete in Array</title>
+
+    <script>
+        let data = [30, 20, 45, 76, 20, 80]
+        let position = 3;
+
+        console.log(data)
+
+        for(let i= position; i<=data.length-1; i++){
+            data[i] = data[i+1]
+            if(i== data.length-1){
+                data.length = data.length-1
+            }
+        }
+        // data.length = data.length-1  // also can do this here
+
+        console.log(data)
+
+        // // with splice()
+
+        // data.splice(position, 1)
+        // console.log(data)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

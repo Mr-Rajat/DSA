@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traverse in JS</title>
+    <script>
+        let data = [9,45, 2,8, 45,23,7,78,0,11,41,77]
+
+        // // traversing all array values
+        // for(let i=0 ; i<data.length; i++){
+        //     console.log(data[i])
+        //     document.write(`${data[i]} <br>`)
+        // }
+
+        // // accessing values
+        // let x=3;
+        // document.write(data[x])
+
+        function getElement(){
+            let element = document.getElementById("element").value;
+            alert(data[parseInt(element)])
+        }
+    </script>
+</head>
+<body>
+
+    <input type="text" id="element" />
+    <button onclick="getElement()">Get Element</button>
+    
+</body>
+</html>
